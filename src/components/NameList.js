@@ -22,14 +22,18 @@ function NameList() {
     },
   ];
 
-  const personsList = persons.map((person) => {
-   return(
-     <h2 key={person.id}>
-      I am {person.name}. I am {person.age} years old. I know {person.skill}.
-    </h2>
-   )
-  });
-  return <div>{personsList}</div>;
+//   const personsList = persons.map((person) => {
+//    return(
+//      <h2 key={person.id}>
+//       I am {person.name}. I am {person.age} years old. I know {person.skill}.
+//     </h2>
+//    )
+//   });
+//   return <div>{personsList}</div>;
+
+    const names = ["Bruce","Diana","Clark","Bruce"]
+    const nameList = names.map((name,index) => <h2 key={index}> {index} - {name} </h2>)
+    return <div>{nameList}</div>
 }
 
 export default NameList;
