@@ -17,6 +17,9 @@ import Form from "./components/Form"
 import LifecycleA from './components/LifecycleA';
 import FragmentDemo from './components/FragmentDemo';
 import Columns from './components/Columns';
+import PureComp from './components/PureComp';
+import RegComp from "./components/RegComp";
+import ParentComp from './components/ParentComp';
 
 function App() {
   return (
@@ -45,7 +48,8 @@ function App() {
      {/* <Form /> */}
      {/* <LifecycleA/> */}
      {/* <FragmentDemo /> */}
-     <Columns />
+     {/* <Columns /> */}
+     <ParentComp />
     </div>
   
   );
