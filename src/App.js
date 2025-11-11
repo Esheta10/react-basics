@@ -15,6 +15,8 @@ import './appStyles.css'
 import styles from './appStyles.module.css'
 import Form from "./components/Form"
 import LifecycleA from './components/LifecycleA';
+import FragmentDemo from './components/FragmentDemo';
+import Columns from './components/Columns';
 
 function App() {
   return (
@@ -41,7 +43,9 @@ function App() {
      {/* <h1 className='error'>Error</h1>
      <h1 className={styles.success}>Success</h1> */}
      {/* <Form /> */}
-     <LifecycleA/>
+     {/* <LifecycleA/> */}
+     {/* <FragmentDemo /> */}
+     <Columns />
     </div>
   
   );
