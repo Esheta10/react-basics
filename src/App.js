@@ -20,6 +20,7 @@ import Columns from './components/Columns';
 import PureComp from './components/PureComp';
 import RegComp from "./components/RegComp";
 import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
 
 function App() {
   return (
@@ -49,7 +50,8 @@ function App() {
      {/* <LifecycleA/> */}
      {/* <FragmentDemo /> */}
      {/* <Columns /> */}
-     <ParentComp />
+     {/* <ParentComp /> */}
+     <RefsDemo />
     </div>
   
   );
