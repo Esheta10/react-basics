@@ -29,6 +29,9 @@ import Hero from "./components/Hero";
 import ErrorBoundary from "./components/ErrorBoundary";
 import ClickCounter from "./components/ClickCounter";
 import HoverCounter from "./components/HoverCounter";
+import ClickCounterTwo from "./components/ClickCounterTwo";
+import HoverCounterTwo from "./components/HoverCounterTwo";
+
 
 function App() {
   return (
@@ -73,8 +76,10 @@ function App() {
       <ErrorBoundary>
         <Hero heroName="Joker" />
       </ErrorBoundary> */}
-      <ClickCounter/>
-      <HoverCounter name="Esheta" />
+      {/* <ClickCounter/>
+      <HoverCounter name="Esheta" /> */}
+      <ClickCounterTwo />
+      <HoverCounterTwo />
     </div>
   );
 }
