@@ -32,6 +32,8 @@ import HoverCounter from "./components/HoverCounter";
 import ClickCounterTwo from "./components/ClickCounterTwo";
 import HoverCounterTwo from "./components/HoverCounterTwo";
 import User from "./components/User";
+import ComponentC from "./components/ComponentC";
+import { UserProvider } from "./components/userContext";
 
 
 function App() {
@@ -79,9 +81,12 @@ function App() {
       </ErrorBoundary> */}
       {/* <ClickCounter/>
       <HoverCounter name="Esheta" /> */}
-      <ClickCounterTwo />
+      {/* <ClickCounterTwo />
       <HoverCounterTwo />
-      <User name={(isLoggedIn) => isLoggedIn ? "Vishwas" : "Guest"}/>
+      <User name={(isLoggedIn) => isLoggedIn ? "Vishwas" : "Guest"}/> */}
+      <UserProvider value="Vishwas">
+        <ComponentC />
+      </UserProvider>
     </div>
   );
 }
